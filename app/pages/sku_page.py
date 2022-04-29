@@ -1,6 +1,6 @@
 import streamlit as st
 
-from app.utility import marketplaces, get_marketplace_index
+from app.utility import marketplaces, get_marketplace_index, publish_on_queue
 
 
 def page():
@@ -24,4 +24,7 @@ def page():
     )
 
     if st.button("Inserir na fila"):
-        print("insert on queue")
+        publish_on_queue({
+            "url": url,
+            "marketplace": marketplace
+        }, queue=f"{marketplace}_sku")
