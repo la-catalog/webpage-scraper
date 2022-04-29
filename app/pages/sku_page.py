@@ -1,6 +1,6 @@
 import streamlit as st
 
-from marketplaces import marketplaces, get_marketplace_index
+from app.utility import marketplaces, get_marketplace_index
 
 
 def page():

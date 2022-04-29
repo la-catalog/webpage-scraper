@@ -1,6 +1,6 @@
 import streamlit as st
 
-from pages import sku_page, search_page
+from app.pages import sku_page, search_page
 
 pages = {
     "Inserir na SKU na fila": sku_page.page,
@@ -8,8 +8,6 @@ pages = {
 }
 
 
-
 page = st.selectbox(label="Página", options=pages.keys())
 
 pages[page]()
-
