@@ -14,14 +14,16 @@ def get_marketplace_index(url: str):
 
 
 def publish_on_queue(message: dict, queue: str):
+    message["origin"] = "MANUAL"
     message = json.dumps(message)
     parameters = URLParameters(os.environ["RABBIT_URI"])
     connection = BlockingConnection(parameters=parameters)
     channel = connection.channel()
     channel.basic_publish(
-        exchange="amqp_direct",
+        exchange="",
         routing_key=queue,
         body=message,
         properties=BasicProperties(delivery_mode=PERSISTENT_DELIVERY_MODE, priority=1),
+        mandatory=True,
     )
     channel.close()

@@ -24,7 +24,10 @@ def page():
     )
 
     if st.button("Inserir na fila"):
-        publish_on_queue({
-            "url": url,
-            "marketplace": marketplace
-        }, queue=f"{marketplace}_sku")
+        with st.spinner(text="Inserindo..."):
+            publish_on_queue({
+                "url": url,
+                "marketplace": marketplace
+            }, queue=f"{marketplace}_sku")
+        
+        st.success(body="Inserido!")
