@@ -1,6 +1,7 @@
-import os
 import json
-from pika import URLParameters, BlockingConnection, BasicProperties
+import os
+
+from pika import BasicProperties, BlockingConnection, URLParameters
 from pika.spec import PERSISTENT_DELIVERY_MODE
 
 marketplaces = ["americanas", "amazon"]
@@ -13,9 +14,7 @@ def get_marketplace_index(url: str):
     return 0
 
 
-def publish_on_queue(message: dict, queue: str):
-    message["origin"] = "MANUAL"
-    message = json.dumps(message)
+def publish_on_queue(message: str, queue: str):
     parameters = URLParameters(os.environ["RABBIT_URI"])
     connection = BlockingConnection(parameters=parameters)
     channel = connection.channel()

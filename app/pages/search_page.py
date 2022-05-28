@@ -1,6 +1,7 @@
 import streamlit as st
+from rabbit_models.search_scraper import Body
 
-from app.utility import marketplaces, get_marketplace_index, publish_on_queue
+from app.utility import get_marketplace_index, marketplaces, publish_on_queue
 
 
 def page():
@@ -26,9 +27,11 @@ def page():
 
     if st.button("Inserir na fila"):
         with st.spinner(text="Inserindo..."):
-            publish_on_queue({
-                "url": url,
-                "marketplace": marketplace
-            }, queue=f"{marketplace}_search")
-        
+            queue = f"{marketplace}_search"
+            body = Body(url=url, marketplace=marketplace)
+            body.metadata.source = "scraper-webpage"
+            message = body.json(exclude_none=True)
+
+            publish_on_queue(message=message, queue=queue)
+
         st.success(body="Inserido!")
