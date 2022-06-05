@@ -14,16 +14,15 @@ def get_marketplace_index(url: str):
 
 
 def publish_on_queue(message: str, queue: str):
-    parameters = URLParameters(os.environ["RABBIT_URI"])
+    parameters = URLParameters(os.environ["RABBIT_URL"])
     connection = BlockingConnection(parameters=parameters)
     channel = connection.channel()
 
-    channel.queue_declare(queue=queue, durable=True)
     channel.basic_publish(
         exchange="",
         routing_key=queue,
         body=message,
-        properties=BasicProperties(delivery_mode=PERSISTENT_DELIVERY_MODE, priority=1),
+        properties=BasicProperties(delivery_mode=PERSISTENT_DELIVERY_MODE, priority=10),
         mandatory=True,
     )
     channel.close()
