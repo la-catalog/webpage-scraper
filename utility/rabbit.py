@@ -3,15 +3,6 @@ import os
 from pika import BasicProperties, BlockingConnection, URLParameters
 from pika.spec import PERSISTENT_DELIVERY_MODE
 
-marketplaces = ["americanas", "amazon", "rihappy"]
-
-
-def get_marketplace_index(url: str):
-    for index, marketplace in enumerate(marketplaces):
-        if marketplace in url:
-            return index
-    return 0
-
 
 def publish_on_queue(message: str, queue: str):
     parameters = URLParameters(os.environ["RABBIT_URL"])
