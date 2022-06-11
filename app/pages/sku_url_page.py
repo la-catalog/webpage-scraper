@@ -1,5 +1,5 @@
 import streamlit as st
-from rabbit_models.search_scraper import Body
+from rabbit_models.sku_scraper import Body
 
 from app.utility import get_marketplace_index, marketplaces, publish_on_queue
 
@@ -7,28 +7,31 @@ from app.utility import get_marketplace_index, marketplaces, publish_on_queue
 def page():
     st.markdown(
         """
-        # Páginar busca
-        **URL**: O link para a primeira página da busca.  
-        *Comportamento é inesperado caso não seja a primeira página pois a paginação de cada marketplace pode variar.*  
-        **Marketplace**: O marketplace o qual a página pertence.  
+        # Inserir SKU  
+        O SKU vai entrar na fila com prioridade máxima.  
         """
     )
 
     url = st.text_input(
-        label="URL", help="Exemplo: https://www.amazon.com.br/s?k=laser"
+        label="URL para a página do SKU",
+        help="""
+        Exemplo: https://www.amazon.com.br/dp/B074WTM8PH  
+        """,
     )
 
     marketplace = st.selectbox(
         label="Marketplace",
         options=marketplaces,
         index=get_marketplace_index(url=url),
-        help="Tentamos inferir quando você bota o URL mas podemos errar",
+        help="""  
+        Tentamos inferir pelo URL mas podemos errar  
+        """,
     )
 
     if st.button("Inserir na fila"):
         with st.spinner(text="Inserindo..."):
-            queue = f"{marketplace}_search"
-            body = Body(url=url, marketplace=marketplace)
+            queue = f"{marketplace}_sku"
+            body = Body(urls=[url], marketplace=marketplace)
             body.metadata.source = "scraper-webpage"
             message = body.json(exclude_none=True)
 
