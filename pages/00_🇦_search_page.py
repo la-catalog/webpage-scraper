@@ -1,7 +1,7 @@
 import streamlit as st
 from rabbit_models.search_scraper import Body
 
-from utility.marketplaces import marketplaces
+from utility.marketplaces import MARKETPLACES
 from utility.rabbit import publish_on_queue
 
 st.markdown(
@@ -13,7 +13,7 @@ st.markdown(
 )
 
 url = st.text_input(label="Busca")
-marketplace = st.selectbox(label="Marketplace", options=marketplaces)
+marketplace = st.selectbox(label="Marketplace", options=MARKETPLACES)
 
 if st.button("Inserir na fila"):
     with st.spinner(text="Inserindo..."):
