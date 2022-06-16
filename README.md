@@ -1,2 +1,2 @@
 # webpage-scraper
-Página reservada para interações **rápidas** e **manuais** com os scrapers.  
+Página reservada para interações **rápidas** com os scrapers.  
