@@ -84,7 +84,7 @@ query, marketplace = search_bar(marketplaces=MARKETPLACES)
 
 # Prepare query
 query = re.escape(query)
-pattern = re.compile(f".*{query}.*", re.IGNORECASE)
+pattern = re.compile(f"{query}", re.IGNORECASE)
 regex = Regex.from_native(pattern)
 regex.flags ^= re.UNICODE
 
