@@ -1,10 +1,9 @@
 import streamlit as st
 from page_infra.options import get_marketplace_infra
-from page_infra.options import options as marketplaces
 from rabbit_models.search_scraper import Body
 from structlog.stdlib import get_logger
 
-from utility.marketplaces import get_marketplace_index
+from utility.marketplaces import MARKETPLACES, get_marketplace_index
 from utility.rabbit import publish_on_queue
 
 st.markdown(
@@ -25,7 +24,7 @@ url = st.text_input(
 
 marketplace = st.selectbox(
     label="Marketplace",
-    options=marketplaces.keys(),
+    options=MARKETPLACES,
     index=get_marketplace_index(url=url),
     help="""
     Tentamos inferir pelo URL mas podemos errar  

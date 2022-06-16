@@ -1,9 +1,9 @@
 import streamlit as st
 from page_infra.options import get_marketplace_infra
-from page_infra.options import options as marketplaces
 from rabbit_models.search_scraper import Body
 from structlog.stdlib import get_logger
 
+from utility.marketplaces import MARKETPLACES
 from utility.rabbit import publish_on_queue
 
 st.markdown(
@@ -15,7 +15,7 @@ st.markdown(
 )
 
 url = st.text_input(label="Busca")
-marketplace = st.selectbox(label="Marketplace", options=marketplaces.keys())
+marketplace = st.selectbox(label="Marketplace", options=MARKETPLACES)
 infra = get_marketplace_infra(marketplace=marketplace, logger=get_logger())
 
 if st.button("Inserir na fila"):
