@@ -1,6 +1,6 @@
 import streamlit as st
 from page_infra.options import get_marketplace_infra
-from rabbit_models.sku_scraper import Body
+from rabbit_models.page_scraper import Body
 from structlog.stdlib import get_logger
 
 from utility.marketplaces import MARKETPLACES, get_marketplace_index

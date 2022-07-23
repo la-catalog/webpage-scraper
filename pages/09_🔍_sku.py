@@ -7,14 +7,21 @@ import streamlit as st
 from bson.regex import Regex
 from la_stopwatch import Stopwatch
 from page_infra.options import get_marketplace_infra
-from page_sku import SKU
+from page_models import SKU
 from pymongo import MongoClient
 from structlog.stdlib import get_logger
-from webpage_components import (display_attributes, display_basic,
-                                display_images, display_measurements,
-                                display_prices, display_rating,
-                                display_segments, display_weight, search_bar,
-                                search_info_bar)
+from webpage_components import (
+    display_attributes,
+    display_basic,
+    display_images,
+    display_measurements,
+    display_prices,
+    display_rating,
+    display_segments,
+    display_weight,
+    search_bar,
+    search_info_bar,
+)
 
 from utility.marketplaces import MARKETPLACES
 
@@ -96,11 +103,15 @@ collection = infra.sku_collection
 # Execute query
 stopwatch = Stopwatch()
 client = MongoClient(os.environ["MONGO_URL"])
-cursor = client[database][collection].find({"$or": [
-    {"_id": regex},
-    {"name": regex},
-    {"description": regex},
-]})
+cursor = client[database][collection].find(
+    {
+        "$or": [
+            {"_id": regex},
+            {"name": regex},
+            {"description": regex},
+        ]
+    }
+)
 result = list(cursor)
 
 display_result(result, stopwatch.duration())
