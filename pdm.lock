@@ -527,7 +527,7 @@ name = "page-infra"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/page-infra.git"
-revision = "59bf21164cf821565533b70fd12fd73cfe4241f8"
+revision = "be22b0eb8e5dc897cd2b9add1e10dd955e8d4bc7"
 summary = ""
 dependencies = [
     "aio-pika>=8.0.3",
@@ -771,7 +771,7 @@ name = "rabbit-models"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/rabbit-models.git"
-revision = "fb19f3356e921c92542b585a433e4ebf888c5ac5"
+revision = "623f9f46aed4757c4be359cd76759e7f5eb441e4"
 summary = ""
 dependencies = [
     "pydantic>=1.9.1",
@@ -1012,7 +1012,7 @@ name = "webpage-components"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/webpage-components.git"
-revision = "8d578974ec082213763a9cd3bdf543f74c100cfd"
+revision = "ac7aa236df8eeb0786f22add91763874c1dc941d"
 summary = ""
 dependencies = [
     "streamlit>=1.11.0",
