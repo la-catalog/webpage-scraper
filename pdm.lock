@@ -528,7 +528,7 @@ version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/page-infra.git"
 revision = "82aec902f09768f8f63a4ee15b1437a419a9900d"
-summary = "UNKNOWN"
+summary = ""
 dependencies = [
     "aio-pika>=8.0.3",
     "la-stopwatch>=0.0.8",
@@ -545,7 +545,7 @@ version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/page-models.git"
 revision = "d6a6e602ecd297470edaa971ec8b4e56d5659dbf"
-summary = "UNKNOWN"
+summary = ""
 dependencies = [
     "gtin>=1.3.1649173518",
     "motor>=3.0.0",
@@ -759,7 +759,7 @@ summary = "Python for Window Extensions"
 name = "pywinpty"
 version = "2.0.6"
 requires_python = ">=3.7"
-summary = "Pseudo terminal support for Windows from Python."
+summary = ""
 
 [[package]]
 name = "pyzmq"
@@ -777,7 +777,7 @@ version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/rabbit-models.git"
 revision = "623f9f46aed4757c4be359cd76759e7f5eb441e4"
-summary = "UNKNOWN"
+summary = ""
 dependencies = [
     "pydantic>=1.9.1",
 ]
@@ -1056,7 +1056,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:7618b2d3cd8ada761d3b725a9a16edcb0622aa45aeb6957e0e61e32e753aa34c"
+content_hash = "sha256:0b2393495f274d1b1673d3b72d3018497396d27c177bf848f10fdf1e6dfad5d0"
 
 [metadata.files]
 "aio-pika 8.0.3" = [
