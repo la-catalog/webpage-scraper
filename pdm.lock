@@ -924,7 +924,7 @@ git = "https://github.com/la-catalog/text-utility"
 revision = "6644c1026cf61611fe1f838bbf01f0c60f2b64ec"
 summary = ""
 dependencies = [
-    "gtin>=1.3.1649173518",
+    "gtin==1.3.1649173518",
 ]
 
 [[package]]
@@ -1063,7 +1063,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:5de7d4101b9a4a8c7be4c5936b0a1e9455f636df3fe5b85ef92accc31713a63a"
+content_hash = "sha256:eb49de804e6ab81cd5a3cdaf9aed5895d5a29b0e36f6983f70d97d6c3619dc9c"
 
 [metadata.files]
 "aio-pika 8.2.2" = [
