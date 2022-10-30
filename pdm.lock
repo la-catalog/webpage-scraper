@@ -545,7 +545,7 @@ name = "page-infra"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/page-infra.git"
-revision = "de37a26cec11a8389adf1d3800fe416ca393b0ff"
+revision = "47365f7e2ab6e26f7533a0f2c6439d5c5c1f9b67"
 summary = ""
 dependencies = [
     "aio-pika==8.2.4",
@@ -617,7 +617,8 @@ summary = "Tiny 'shelve'-like database with concurrency support"
 
 [[package]]
 name = "pika"
-version = "1.3.0"
+version = "1.3.1"
+requires_python = ">=3.4"
 summary = "Pika Python AMQP Client Library"
 
 [[package]]
@@ -791,7 +792,7 @@ name = "rabbit-models"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/rabbit-models.git"
-revision = "2a7ca0e72a99e655ad71380f348f2c6181f9a702"
+revision = "cfa10c9a3ce502cce2eea1f2c4ad2894ddf9598e"
 summary = ""
 dependencies = [
     "pydantic==1.10.2",
@@ -1021,7 +1022,7 @@ name = "webpage-components"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/webpage-components.git"
-revision = "850ef8013d66662b5541fd52983bf3962dab0d09"
+revision = "5030267e673eda85fb06dc628b40baddecbe1d5f"
 summary = ""
 dependencies = [
     "streamlit==1.13.0",
@@ -1059,7 +1060,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:4d36ad4ab94b3c12634fcd547a69fec452c78818c00872df6122a53eb2cab5cf"
+content_hash = "sha256:49b1e34c1457a9eca4e50580474bbdc29ee2665ff0a57febeb07d261cea51221"
 
 [metadata.files]
 "aio-pika 8.2.4" = [
@@ -1584,9 +1585,9 @@ content_hash = "sha256:4d36ad4ab94b3c12634fcd547a69fec452c78818c00872df6122a53eb
     {url = "https://files.pythonhosted.org/packages/9a/41/220f49aaea88bc6fa6cba8d05ecf24676326156c23b991e80b3f2fc24c77/pickleshare-0.7.5-py2.py3-none-any.whl", hash = "sha256:9649af414d74d4df115d5d718f82acb59c9d418196b7b4290ed47a12ce62df56"},
     {url = "https://files.pythonhosted.org/packages/d8/b6/df3c1c9b616e9c0edbc4fbab6ddd09df9535849c64ba51fcb6531c32d4d8/pickleshare-0.7.5.tar.gz", hash = "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca"},
 ]
-"pika 1.3.0" = [
-    {url = "https://files.pythonhosted.org/packages/c8/d9/e44e4aa49f1bef15efc21147cbc032d07177ab300f947d915eafb3283af0/pika-1.3.0-py3-none-any.whl", hash = "sha256:9195f37aed089862b205fd8f8ce1cc6ea0a7ee3cd80f58e6eea6cb9d8411a647"},
-    {url = "https://files.pythonhosted.org/packages/cc/6e/8baa90dc8de34c0c24dab067780fe01fceb114c72d7b0448a3667af900d6/pika-1.3.0.tar.gz", hash = "sha256:15357ddc47a5c28f0b07d80e93d504cbbf7a1ad5e1cd129ecd27afe76472c529"},
+"pika 1.3.1" = [
+    {url = "https://files.pythonhosted.org/packages/9d/70/173abbf8b0bc8260a4e6d39a5f633da114bfebeb35715e6c05d17dc77403/pika-1.3.1.tar.gz", hash = "sha256:beb19ff6dd1547f99a29acc2c6987ebb2ba7c44bf44a3f8e305877c5ef7d2fdc"},
+    {url = "https://files.pythonhosted.org/packages/c9/4f/6abbb34a39352f40c66974e3ec4db7c79ef9b8bef06d7d3c9e0f3c6e039c/pika-1.3.1-py3-none-any.whl", hash = "sha256:89f5e606646caebe3c00cbdbc4c2c609834adde45d7507311807b5775edac8e0"},
 ]
 "pillow 9.2.0" = [
     {url = "https://files.pythonhosted.org/packages/01/61/3ff85fb4bb596ce3d223c8fcf93c8df5c12bc8899dfb4fb3cb1c5b20dd5f/Pillow-9.2.0-cp39-cp39-manylinux_2_28_x86_64.whl", hash = "sha256:13b725463f32df1bfeacbf3dd197fb358ae8ebcd8c5548faa75126ea425ccb60"},
