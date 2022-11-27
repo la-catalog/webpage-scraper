@@ -1,6 +1,6 @@
 [[package]]
 name = "aio-pika"
-version = "8.2.4"
+version = "8.2.5"
 requires_python = ">3.6, <4"
 summary = "Wrapper for the aiormq for asyncio and humans."
 dependencies = [
@@ -415,8 +415,8 @@ dependencies = [
 
 [[package]]
 name = "meilisearch"
-version = "0.22.1"
-requires_python = ">=3"
+version = "0.22.2"
+requires_python = ">=3.7"
 summary = "The python client for Meilisearch API."
 dependencies = [
     "camel-converter[pydantic]",
@@ -545,21 +545,21 @@ name = "page-infra"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/page-infra.git"
-revision = "514f157de70d9f5171c491fd610edfb4bd942c37"
+revision = "3073941ff8aee284e8e7b3f65c207b24b11aa8e7"
 summary = ""
 dependencies = [
-    "aio-pika==8.2.4",
+    "aio-pika==8.2.5",
     "la-stopwatch==0.0.9",
-    "meilisearch==0.22.1",
+    "meilisearch==0.22.2",
     "motor==3.1.1",
-    "page-models==0.2.0",
+    "page-models==0.2.1",
     "redis==4.3.4",
-    "structlog==22.1.0",
+    "structlog==22.2.0",
 ]
 
 [[package]]
 name = "page-models"
-version = "0.2.0"
+version = "0.2.1"
 requires_python = ">=3.10"
 summary = ""
 dependencies = [
@@ -792,7 +792,7 @@ name = "rabbit-models"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/rabbit-models.git"
-revision = "c9e3e075b2d2c904dd81c0a6a56b0506e3fd428b"
+revision = "ff07ca3af49e690d9d9b242949f700538cb2e946"
 summary = ""
 dependencies = [
     "pydantic==1.10.2",
@@ -910,7 +910,7 @@ dependencies = [
 
 [[package]]
 name = "structlog"
-version = "22.1.0"
+version = "22.2.0"
 requires_python = ">=3.7"
 summary = "Structured Logging for Python"
 
@@ -1022,7 +1022,7 @@ name = "webpage-components"
 version = "0.1.0"
 requires_python = ">=3.10"
 git = "https://github.com/la-catalog/webpage-components.git"
-revision = "0c101cbf56f5d23d3b5c8ffef1a44a044ebdc787"
+revision = "cd7dc7717f0b54f131641eb66df6478c83e638c8"
 summary = ""
 dependencies = [
     "streamlit==1.15.0",
@@ -1060,12 +1060,12 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:c235d692ce88f83e9cd011b54320946712b23b5f796655cf5c16dd1951fdb64f"
+content_hash = "sha256:c60cbf82c9ec66fd0f208ead8c864bc735293b4aa4ab7ef2a308f6e8fe0ed501"
 
 [metadata.files]
-"aio-pika 8.2.4" = [
-    {url = "https://files.pythonhosted.org/packages/04/12/26955aa09742a3fc1a7a4996b214728a7735b4cb1dff96d9127418bfd197/aio_pika-8.2.4-py3-none-any.whl", hash = "sha256:997e74efab11c34f37ff20e91316a4d7f5d3ae13167e3adec809aac09c7b84aa"},
-    {url = "https://files.pythonhosted.org/packages/b9/99/cb8a42122531a5c2fbc78f9e8b66eceee73a5959f8caec2e7e38b3a57802/aio-pika-8.2.4.tar.gz", hash = "sha256:71f0a67cc45bdd0e6b64121f2eda8462937a2d83266855a55d7d8c106c14d3d6"},
+"aio-pika 8.2.5" = [
+    {url = "https://files.pythonhosted.org/packages/23/d4/6f701d0c1cb44245f6c1f6af41d07db87838701e4353dc29be06a252fd78/aio-pika-8.2.5.tar.gz", hash = "sha256:80b7d9f60e6d3970fc1285bf0a40600270a7488d966f916e7f2f750f73063fa1"},
+    {url = "https://files.pythonhosted.org/packages/95/c6/cdc838baac8618a1933f5cd36e1908de74b6fbc0b5cafed83d07b20b7782/aio_pika-8.2.5-py3-none-any.whl", hash = "sha256:8584c2220af28ebed2339b233d303e98f6a8f105d761a57b5c20a79ae184751a"},
 ]
 "aiormq 6.4.2" = [
     {url = "https://files.pythonhosted.org/packages/b7/93/cd671ea26f8f208bbcaf0fb0f3aa8a55e00ffc0a2f539d93c02919376932/aiormq-6.4.2-py3-none-any.whl", hash = "sha256:fdbf2efed73a2e07437de3af5e3591165efb155a18394dc7295cac9e80943c62"},
@@ -1413,9 +1413,9 @@ content_hash = "sha256:c235d692ce88f83e9cd011b54320946712b23b5f796655cf5c16dd195
     {url = "https://files.pythonhosted.org/packages/0f/98/838f4c57f7b2679eec038ad0abefd1acaeec35e635d4d7af215acd7d1bd2/matplotlib-inline-0.1.3.tar.gz", hash = "sha256:a04bfba22e0d1395479f866853ec1ee28eea1485c1d69a6faf00dc3e24ff34ee"},
     {url = "https://files.pythonhosted.org/packages/a6/2d/2230afd570c70074e80fd06857ba2bdc5f10c055bd9125665fe276fadb67/matplotlib_inline-0.1.3-py3-none-any.whl", hash = "sha256:aed605ba3b72462d64d475a21a9296f400a19c4f74a31b59103d2a99ffd5aa5c"},
 ]
-"meilisearch 0.22.1" = [
-    {url = "https://files.pythonhosted.org/packages/85/06/48e26acab7a39be75e9b7f7b5f95c91e3e809d3439ace751893a41979b39/meilisearch-0.22.1-py3-none-any.whl", hash = "sha256:868d43d5af12e57c45c59e138e63c0e3a3a1bfbce38c0ee71f1d817f2d2fc2f1"},
-    {url = "https://files.pythonhosted.org/packages/8f/6f/8029d3c9f791f1d9f6b46ed2cb9cfa274d579418e541f640d14c12626361/meilisearch-0.22.1.tar.gz", hash = "sha256:81b703c0525ac670153585f6f2f93fce0f99f533e530c26a11ed204fae801670"},
+"meilisearch 0.22.2" = [
+    {url = "https://files.pythonhosted.org/packages/46/93/7edbfe5367cb7bbc01aab31556c84a5c874ca8eadcff27977539e6c12602/meilisearch-0.22.2.tar.gz", hash = "sha256:f887a3f0bffed7b7ed13ccd7ee786309a2de8fad729575072f5e311a367ecaa4"},
+    {url = "https://files.pythonhosted.org/packages/e0/8f/8519caeb45c955c4f0420a2a8618763d2b7ae8e8dd510a054021611f7fd2/meilisearch-0.22.2-py3-none-any.whl", hash = "sha256:fb8f0749651a95c9c898eba98f971825e8d10900b546ec33a7d6f3b4b7a90ba5"},
 ]
 "mistune 0.8.4" = [
     {url = "https://files.pythonhosted.org/packages/09/ec/4b43dae793655b7d8a25f76119624350b4d65eb663459eb9603d7f1f0345/mistune-0.8.4-py2.py3-none-any.whl", hash = "sha256:88a1051873018da288eee8538d476dffe1262495144b33ecb586c4ab266bb8d4"},
@@ -2053,9 +2053,9 @@ content_hash = "sha256:c235d692ce88f83e9cd011b54320946712b23b5f796655cf5c16dd195
     {url = "https://files.pythonhosted.org/packages/06/ed/6b683eefe88782e38d32da2d749667b743cc81fa15a56d5317922ca464ee/streamlit-1.15.0.tar.gz", hash = "sha256:7738a0050fdde8226635b443a488895d5223fe5f6524575586fb1faf835ed1b6"},
     {url = "https://files.pythonhosted.org/packages/2f/03/1d3c67ff6ef11ff1f0ad28f026edca7842f8bc7a516b7b7fcf422f947395/streamlit-1.15.0-py2.py3-none-any.whl", hash = "sha256:42d06bdc835607008169bf85ce6bf3ae31a3c155470bc342113f70b5155e55b7"},
 ]
-"structlog 22.1.0" = [
-    {url = "https://files.pythonhosted.org/packages/2b/d4/359d0313ba3e7080cc943b515640b9e301f51abf196008c83c765d939df5/structlog-22.1.0.tar.gz", hash = "sha256:94b29b1d62b2659db154f67a9379ec1770183933d6115d21f21aa25cfc9a7393"},
-    {url = "https://files.pythonhosted.org/packages/fb/22/9748093e3a26729cc9d4f1dc4ffafaf43917377884b8eb7fce57ae9d06e9/structlog-22.1.0-py3-none-any.whl", hash = "sha256:760d37b8839bd4fe1747bed7b80f7f4de160078405f4b6a1db9270ccbfce6c30"},
+"structlog 22.2.0" = [
+    {url = "https://files.pythonhosted.org/packages/18/c3/ab9d0d5d2d792a4a954b2449cdb88b7a5dadc063985ad5e720b0348db612/structlog-22.2.0-py3-none-any.whl", hash = "sha256:bb1aa189214c30372a8afaa592f9556756aeb690e1ad7eb34391d7b5fa0f09b2"},
+    {url = "https://files.pythonhosted.org/packages/4d/7b/54c4fb8063d8f1e81b17c792fefd244a205210fc5742a08daa905482227b/structlog-22.2.0.tar.gz", hash = "sha256:4edfe1d9f15f8a4bf365a817f7182af5d610596c155434b7564bfe7d40c2753c"},
 ]
 "terminado 0.15.0" = [
     {url = "https://files.pythonhosted.org/packages/4b/27/79dabfeda57d2a878611b41f7d9a401b3b6509c610ec90121a980df0a600/terminado-0.15.0.tar.gz", hash = "sha256:ab4eeedccfcc1e6134bfee86106af90852c69d602884ea3a1e8ca6d4486e9bfe"},

@@ -7,7 +7,7 @@ authors = [
     {name = "thiagola92", email = "thiagola92@gmail.com"},
 ]
 dependencies = [
-    "structlog==22.1.0",
+    "structlog==22.2.0",
     "page-infra @ git+https://github.com/la-catalog/page-infra.git",
     "rabbit-models @ git+https://github.com/la-catalog/rabbit-models.git",
     "webpage-components @ git+https://github.com/la-catalog/webpage-components.git",
