@@ -7,12 +7,12 @@ authors = [
     {name = "thiagola92", email = "thiagola92@gmail.com"},
 ]
 dependencies = [
-    "structlog==22.2.0",
-    "page-infra @ git+https://github.com/la-catalog/page-infra.git",
-    "rabbit-models @ git+https://github.com/la-catalog/rabbit-models.git",
-    "webpage-components @ git+https://github.com/la-catalog/webpage-components.git",
+    "structlog==22.1.0",
+    "page-infra==0.1.0",
+    "rabbit-models==0.1.0",
+    "webpage-components==0.1.0",
     "pika==1.3.1",
-    "streamlit==1.15.0",
+    "streamlit==1.13.0",
 ]
 
 [project.urls]
@@ -28,8 +28,8 @@ isort = "python -m isort -v --ac --profile black ."
 
 [tool.pdm.dev-dependencies]
 lint = [
-    "black==22.10.0",
-    "isort==5.10.1",
+    "black==22.12.0",
+    "isort==5.12.0",
 ]
 
 [build-system]

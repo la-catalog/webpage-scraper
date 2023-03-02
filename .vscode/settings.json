@@ -1,3 +1,9 @@
 {
-    "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/__pypackages__/3.11/lib"
+  ],
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/__pypackages__/3.11/lib"
+  ]
 }
